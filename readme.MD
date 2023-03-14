@@ -1,0 +1,626 @@
+<style>
+	th {
+		font-size: 12px;
+		font-weight: 600;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.th {
+		color: #FFFFFF;
+		background-color: #6c757d;
+	}
+	td {
+		font-size: 12px;
+		font-weight: 400;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.personagem {
+		color: #FFFFFF;
+		background-color: #087990;
+	}
+	.lv {
+		color: #000000;
+		background-color: #ffcd39;
+	}
+	.c {
+		color: #000000;
+		background-color: #fd7e14;
+	}
+	.weapons {
+		color: #FFFFFF;
+		background-color: #055160;
+	}
+	.w1 {
+		color: #000000;
+		background-color: #cfe2ff;
+	}
+	.w2 {
+		color: #000000;
+		background-color: #9ec5fe;
+	}
+	.ex {
+		color: #FFFFFF;
+		background-color: #B3261E;
+	}
+	.ld {
+		color: #FFFFFF;
+		background-color: #381E72;
+	}
+	.bt {
+		color: #FFFFFF;
+		background-color: #198754;
+	}
+	.fr {
+		color: #FFFFFF;
+		background-color: #0d6efd;
+	}
+	.armors {
+		color: #FFFFFF;
+		background-color: #dc3545;
+	}
+	.a1 {
+		color: #000000;
+		background-color: #f1aeb5;
+	}
+	.a2 {
+		color: #000000;
+		background-color: #6ea8fe;
+	}
+	.a3 {
+		color: #FFFFFF;
+		background-color: #8540f5;
+	}
+	.artifacts {
+		color: #000000;
+		background-color: #fd7e14;
+	}
+	.blooms {
+		color: #000000;
+		background-color: #3dd5f3;
+	}
+	.lb {
+		color: #000000;
+		background-color: #ffda6a;
+	}
+	.r {
+		color: #FFFFFF;
+		background-color: #dc3545;
+	}
+	.tb {
+		color: #FFFFFF;
+		background-color: #842029;
+	}
+	.fe {
+		color: #000000;
+		background-color: #79dfc1;
+	}
+	.sb {
+		color: #FFFFFF;
+		background-color: #984c0c;
+	}
+	.eb {
+		color: #FFFFFF;
+		background-color: #087990;
+	}
+	.df {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.mr {
+		margin-right: 15px;
+	}
+	.estrela:after {
+		content: '\22C6';
+	}
+	.ok:after {
+		content: '\2714';
+		color: green;
+	}
+	.nok:after {
+		content: '\25AC';
+		color: red;
+	}
+	.negrito {
+		font-weight: 600;
+	}
+</style>
+
+### Dissidia Final Fantasy Opera Omnia
+<div id="v"></div>
+<script>
+	var v = document.getElementById("v");
+	var c = 0;
+	v.innerHTML = c;
+	setInterval(() => {
+		c++;
+		v.innerHTML = c;
+	}, 1000);
+
+</script>
+
+<div class="df">
+	<div class="mr">
+		<table>
+			<thead>
+				<tr>
+					<th class="th">Sigla</th>
+					<th class="th">Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="lv">TP</td>
+					<td class="negrito">Total Power</td>
+				</tr>
+				<tr>
+					<td class="lv">LV</td>
+					<td class="negrito">Level</td>
+				</tr>
+				<tr>
+					<td class="c">C</td>
+					<td class="negrito">Crystal</td>
+				</tr>
+				<tr>
+					<td class="lb">LB</td>
+					<td class="negrito">Limit Break</td>
+				</tr>
+				<tr>
+					<td class="r">R</td>
+					<td class="negrito">Realizable</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mr">
+		<table>
+			<thead>
+				<tr>
+					<th class="th">Sigla</th>
+					<th class="th">Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="w1">W1</td>
+					<td class="negrito">Weapon 1</td>
+				</tr>
+				<tr>
+					<td class="w2">W2</td>
+					<td class="negrito">Weapon 2</td>
+				</tr>
+				<tr>
+					<td class="ex">EX</td>
+					<td class="negrito">Ex Weapon</td>
+				</tr>
+				<tr>
+					<td class="ld">LD</td>
+					<td class="negrito">LD Weapon</td>
+				</tr>
+				<tr>
+					<td class="fr">FR</td>
+					<td class="negrito">FR Weapon</td>
+				</tr>
+				<tr>
+					<td class="bt">BT</td>
+					<td class="negrito">BT Weapon</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mr">
+		<table>
+			<thead>
+				<tr>
+					<th class="th">Sigla</th>
+					<th class="th">Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="a1">A1</td>
+					<td class="negrito">Armor</td>
+				</tr>
+				<tr>
+					<td class="a2">A2</td>
+					<td class="negrito">HG Armor</td>
+				</tr>
+				<tr>
+					<td class="a3">A3</td>
+					<td class="negrito"><span class="estrela">7</span> Armor</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mr">
+		<table>
+			<thead>
+				<tr>
+					<th class="th">Sigla</th>
+					<th class="th">Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="tb">TB</td>
+					<td class="negrito">Training Boards</td>
+				</tr>
+				<tr>
+					<td class="sb">SB</td>
+					<td class="negrito">Summon Boards</td>
+				</tr>
+				<tr>
+					<td class="eb">EB</td>
+					<td class="negrito">Enhancement Boards</td>
+				</tr>
+				<tr>
+					<td class="fe">FE</td>
+					<td class="negrito">Force Enhance</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+## Personagens 
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="3" class="personagem">Personagem</th>
+            <th rowspan="3" class="lv">TP</th>
+            <th rowspan="3" class="lv">LV</th>
+            <th rowspan="3" class="c">C</th>
+            <th colspan="9" class="weapons">Weapons</th>
+            <th colspan="6" class="armors">Armors</th>
+            <th rowspan="3" class="artifacts">Artifacts</th>
+            <th rowspan="3" class="blooms">Blooms</th>
+            <th colspan="2" rowspan="2" class="tb">TB</th>
+            <th rowspan="3" class="fe">FE</th>
+        </tr>
+        <tr>
+            <th class="w1">W1</th>
+            <th class="w2">W2</th>
+            <th colspan="3" class="ex">EX</th>
+            <th class="ld">LD</th>
+            <th class="fr">FR</th>
+            <th colspan="2" class="bt">BT</th>
+            <th class="a1">A1</th>
+            <th class="a2" colspan="3">A2</th>
+            <th class="a3" colspan="2">A3</th>
+        </tr>
+		<tr>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="r">R</th>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="r">R</th>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="lb">LB</th>
+			<th class="r">R</th>
+			<th class="lb">LB</th>
+			<th class="r">R</th>
+			<th class="lb">LB</th>
+			<th class="sb">SB</th>
+			<th class="eb">EB</th>
+		</tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./img/O-Jack-Carland.png"></td>
+			<td>9775</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- BT Weapon >> Realizable -->
+			<td>3</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>3</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>30</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/XII-Penelo.png"></td>
+			<td>9775</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- BT Weapon >> Realizable -->
+			<td>3</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>3</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>30</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/XV-Lunafreya.png"></td>
+			<td>8670</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- BT Weapon >> Realizable -->
+			<td>3</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>30</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/VI-Terra.png"></td>
+			<td>8550</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- BT Weapon >> Realizable -->
+			<td>3</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>3</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/0-Machina.png"></td>
+			<td>8475</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>3</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/IX-Garnet.png"></td>
+			<td>8370</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>3</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/XII-Ashe.png"></td>
+			<td>8180</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="nok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/IV-Kain.png"></td>
+			<td>7555</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>1</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="nok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/IX-Beatrix.png"></td>
+			<td>7420</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>0</td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>1</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>30</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/III-Onion-Knight.png"></td>
+			<td>7335</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="nok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/VII-Cloud.png"></td>
+			<td>6985</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td></td> <!-- FR Weapon >> Limit Break -->
+			<td class="nok"></td> <!-- BT Weapon >> Realizable -->
+			<td>0</td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="ok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+        <tr>
+            <td><img src="./img/VIII-Rinoa.png"></td>
+			<td>6895</td> <!-- Total Power -->
+			<td>90</td> <!-- Level -->
+			<td>90</td> <!-- Crystal -->
+			<td>3</td> <!-- Weapons 1 >> Limit Break -->
+			<td>3</td> <!-- Weapons 2 >> Limit Break -->
+			<td>3</td> <!-- EX Weapon >> Limit Break -->
+			<td class="ok"></td> <!-- EX Weapon >> Realizable -->
+			<td>3</td> <!-- EX+ Weapon >> Limit Break -->
+			<td>3</td> <!-- LD Weapon >> Limit Break -->
+			<td>3</td> <!-- FR Weapon >> Limit Break -->
+			<td></td> <!-- BT Weapon >> Realizable -->
+			<td></td> <!-- BT Weapon >> Limit Break -->
+			<td>3</td> <!-- Armor >> Limit Break -->
+			<td>3</td> <!-- HG Armor >> Limit Break -->
+			<td class="ok"></td> <!-- HG Armor >> Realizable -->
+			<td>3</td> <!-- HG+ Armor >> Limit Break -->
+			<td class="nok"></td> <!-- 7s Armor >> Realizable -->
+			<td>0</td> <!-- 7s Armor >> Limit Break -->
+			<td class="ok"></td> <!-- Artifacts -->
+			<td class="ok"></td> <!-- Blooms -->
+			<td>M</td> <!-- Summon Boards -->
+			<td>M</td> <!-- Enhancement Boards -->
+			<td>0</td> <!-- Force Enhance -->
+        </tr>
+    </tbody>
+</table>
